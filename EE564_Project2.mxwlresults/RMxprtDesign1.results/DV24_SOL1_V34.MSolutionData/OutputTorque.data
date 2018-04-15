@@ -1,0 +1,6 @@
+$begin 'SolutionData'
+	Type='OutputTorque'
+	$begin 'Data'
+		Datum(Dependent=0, Independent=0)
+	$end 'Data'
+$end 'SolutionData'
