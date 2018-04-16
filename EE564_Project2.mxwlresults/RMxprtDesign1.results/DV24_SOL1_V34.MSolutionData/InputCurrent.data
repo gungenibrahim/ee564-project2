@@ -1,6 +1,0 @@
-$begin 'SolutionData'
-	Type='InputCurrent'
-	$begin 'Data'
-		Datum(Dependent=0, Independent=0)
-	$end 'Data'
-$end 'SolutionData'

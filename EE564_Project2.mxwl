@@ -177,6 +177,24 @@ $begin 'AnsoftProject'
 				Library='Materials'
 				LibLocation='SysLibrary'
 			$end 'copper'
+			$begin 'aluminum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permeability='1.000021'
+				conductivity='38000000'
+				thermal_conductivity='237.5'
+				mass_density='2689'
+				specific_heat='951'
+				youngs_modulus='69000000000'
+				poissons_ratio='0.31'
+				thermal_expansion_coeffcient='2.33e-005'
+				ModTime=1154373020
+				Library='Materials'
+				LibLocation='SysLibrary'
+			$end 'aluminum'
 		$end 'Materials'
 		$begin 'Scripts'
 		$end 'Scripts'
@@ -797,7 +815,7 @@ $begin 'AnsoftProject'
 				FrictionLoss='11W'
 				WindLoss='11W'
 				ReferenceSpeed='1450rpm'
-				NumberOfPoles=4
+				NumberOfPoles=2
 				StrayLossFactor='0.01'
 			$end 'Machine'
 			$begin 'Stator'
@@ -825,13 +843,13 @@ $begin 'AnsoftProject'
 				DataID=2
 				ParentID=-1
 				DataName='Rotor'
-				OuterDiameter='53mm'
+				OuterDiameter='54.725mm'
 				InnerDiameter='18mm'
 				Length='120mm'
 				SteelType='steel_1008'
 				NumberOfSlots=30
 				SlotType='1'
-				SkewWidth='0'
+				SkewWidth='1'
 				CastRotor=true
 				HalfSlot=false
 				DoubleCage=false
@@ -845,7 +863,7 @@ $begin 'AnsoftProject'
 				DataID=3
 				ParentID=-1
 				DataName='Shaft'
-				MagneticShaft=false
+				MagneticShaft=true
 			$end 'Shaft'
 			$begin 'Slot'
 				DataType='Slot'
@@ -873,12 +891,12 @@ $begin 'AnsoftProject'
 				ParentID=1
 				DataName='Winding'
 				WindingType='Whole-Coiled'
-				WindingLayers='2'
-				InputHalfTurnLength=false
+				WindingLayers='1'
+				InputHalfTurnLength=true
 				HalfTurnLength='0mm'
 				ParallelBranches=1
-				ConductorsPerSlot='2'
-				CoilPitch=7
+				ConductorsPerSlot='30'
+				CoilPitch=0
 				EndAdjustment='0mm'
 				BaseInnerRadius='0mm'
 				TipInnerDiameter='0mm'
@@ -896,13 +914,13 @@ $begin 'AnsoftProject'
 				Wdgcoil_name[0:]
 				Wdgcoil_go[0:]
 				Wdgcoil_re[0:]
-				NumberOfStrands='0'
+				NumberOfStrands='1'
 				WireWrap='0mm'
 				InterturnInsulation='0mm'
-				WireDiameter='4.62mm'
+				WireDiameter='0.912mm'
 				WireWidth='0mm'
 				WireThickness='0mm'
-				Gauge='5'
+				Gauge='19'
 				IsRectWireType=false
 				MixedDiamter[0:]
 				MixedNumber[0:]
@@ -934,9 +952,9 @@ $begin 'AnsoftProject'
 				ParentID=2
 				DataName='Winding'
 				BarConductorType='copper'
-				EndLength='2mm'
-				EndRingWidth='2mm'
-				EndRingHeight='2mm'
+				EndLength='1mm'
+				EndRingWidth='1mm'
+				EndRingHeight='1mm'
 				EndRingConductorType='copper'
 			$end 'Winding'
 		$end 'MachineSetup'
@@ -950,7 +968,7 @@ $begin 'AnsoftProject'
 					ID=0
 					SetupType='TPIM'
 					Enabled=true
-					RatedOutputPower='2000W'
+					RatedOutputPower='1100W'
 					RatedVoltage='380V'
 					RatedSpeed='1450rpm'
 					OperatingTemperature='75cel'
@@ -983,15 +1001,22 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='X'
+								Column='0'
+								Units=''
+							$end 'Sweep'
+						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=34
+				V=209
 				$begin 'Setup'
 					N='Setup1'
-					V=34
-					Soln(N='Performance', V=34)
+					V=209
+					Soln(N='Performance', V=209)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -1018,17 +1043,17 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Machine(Machine(Frame(ActivePage('Winding Editor', View(WindowPos(3, -1, -1, -8, -31, 0, 0, 1343, 488)), View(WindowPos(3, -1, -1, -8, -31, 0, 0, 1343, 488))))))
+						Machine(Machine(Frame(ActivePage('Diagram', View(WindowPos(3, -1, -1, -10, -33, 234, 234, 1577, 722))))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
 					$begin 'ReportManager'
 						$begin 'Reports'
 						$end 'Reports'
-						NextUniqueID=0
+						NextUniqueID=16
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=0
+							NextUniqueID=16
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
@@ -1053,7 +1078,7 @@ $begin 'ProjectPreview'
 		DesignName='RMxprtDesign1'
 		Notes=''
 		Factory='RMxprt'
-		IsSolved=true
+		IsSolved=false
 		'Nominal Setups'[1: 'Setup1']
 		'Optimetrics Setups'[0:]
 		Image64=''
