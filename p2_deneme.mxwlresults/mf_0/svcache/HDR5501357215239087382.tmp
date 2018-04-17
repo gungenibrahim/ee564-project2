@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=4
+	NextUniqueID=12
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -30,6 +30,62 @@ $begin 'SimValueInfos'
 			ValueState(103, 16, 1, 1)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=4
+		$begin 'SimValueParams'
+			QuantityName='StatorTeethFluxDensityParameter'
+			ValueState(103, 16, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=5
+		$begin 'SimValueParams'
+			QuantityName='BottomToothWidthParameter'
+			ValueState(36, 5, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=6
+		$begin 'SimValueParams'
+			QuantityName='RotorYokeFluxDensityParameter'
+			ValueState(103, 16, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=7
+		$begin 'SimValueParams'
+			QuantityName='ArmatureCopperWeightParameter'
+			ValueState(158, 13, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=8
+		$begin 'SimValueParams'
+			QuantityName='ArmatureCoreSteelConsumptionParameter'
+			ValueState(158, 13, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=9
+		$begin 'SimValueParams'
+			QuantityName='PowerFactor'
+			ValueState(90, 15, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=10
+		$begin 'SimValueParams'
+			QuantityName='OutputPower'
+			ValueState(59, 8, 0, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=11
+		$begin 'SimValueParams'
+			QuantityName='StatorYokeFluxDensityParameter'
+			ValueState(103, 16, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
 	$begin 'DesignMap'
@@ -43,10 +99,10 @@ $begin 'SimValueCache'
 						SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=443
+						VersionID=582
 						$begin 'MinorVVMap'
 							MajorVariation=''
-							MinorCacheFile='min18D713572152391026918.tmp'
+							MinorCacheFile='min77791191215239879284.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
@@ -56,13 +112,16 @@ $begin 'SimValueCache'
 						SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=443
+						VersionID=582
 						$begin 'MinorVVMap'
 							MajorVariation=''
-							MinorCacheFile='min18D713572152391026919.tmp'
+							MinorCacheFile='min77791191215239879285.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=530
 			$end 'ContextMap'
 		$end 'SolutionMap'
 	$end 'DesignMap'
