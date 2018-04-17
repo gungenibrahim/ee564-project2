@@ -1025,7 +1025,7 @@ $begin 'AnsoftProject'
 				InputHalfTurnLength=true
 				HalfTurnLength='0mm'
 				ParallelBranches=1
-				ConductorsPerSlot='200'
+				ConductorsPerSlot='130'
 				CoilPitch=7
 				EndAdjustment='0mm'
 				BaseInnerRadius='10mm'
@@ -1131,17 +1131,10 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('AirGapFluxDensityParameter', 1, 103, false, SimValueID=603, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InputCurrent', 1, 77, false, SimValueID=604, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('RotorTeethFluxDensityParameter', 1, 103, false, SimValueID=605, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('StatorTeethFluxDensityParameter', 1, 103, false, SimValueID=606, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('ArmatureCoreSteelConsumptionParameter', 1, 158, false, SimValueID=607, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('PowerFactor', 1, 90, false, SimValueID=608, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('OutputPower', 1, 59, false, SimValueID=609, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('StatorYokeFluxDensityParameter', 1, 103, false, SimValueID=610, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('BreakDownPhaseCurrentParameter', 1, 77, false, SimValueID=939, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('MagnetizingCurrentParameter', 1, 77, false, SimValueID=957, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('StatorPhaseCurrentParameter', 1, 77, false, SimValueID=958, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('AirGapFluxDensityParameter', 1, 103, false, SimValueID=1066, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('StatorTeethFluxDensityParameter', 1, 103, false, SimValueID=1067, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('StatorPhaseCurrentParameter', 1, 77, false, SimValueID=1068, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InputCurrent', 1, 77, false, SimValueID=1069, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='X'
@@ -1153,11 +1146,11 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=1053
+				V=1125
 				$begin 'Setup'
 					N='Setup1'
-					V=1053
-					Soln(N='Performance', V=1053)
+					V=1125
+					Soln(N='Performance', V=1125)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -1184,7 +1177,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Machine(Machine(Frame(ActivePage('Winding Editor', View(WindowPos(5, -1, -1, -8, -31, 119, 11, 1506, 716)), View(WindowPos(5, -1, -1, -8, -31, 119, 11, 1506, 716))))))
+						Machine(Machine(Frame(ActivePage('Winding Editor', View(WindowPos(3, -1, -1, -8, -31, 119, 11, 1506, 716)), View(WindowPos(3, -1, -1, -8, -31, 119, 11, 1506, 716))))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -2063,22 +2056,6 @@ $begin 'AnsoftProject'
 							ReportID=35
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(11)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=25
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 0, 0, 1347, 492))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 1'
@@ -2086,22 +2063,6 @@ $begin 'AnsoftProject'
 							ReportID=37
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(11)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=25
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(3, -1, -1, -8, -31, 26, 26, 1373, 518))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 2'
