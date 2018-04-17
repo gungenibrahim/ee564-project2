@@ -961,7 +961,7 @@ $begin 'AnsoftProject'
 				PressBoardThickness='0mm'
 				OuterDiameter='90mm'
 				InnerDiameter='55mm'
-				Length='350mm'
+				Length='110mm'
 				StackingFactor=0.95
 				SteelType='steel_1010'
 				SlotType='4'
@@ -973,9 +973,9 @@ $begin 'AnsoftProject'
 				DataID=2
 				ParentID=-1
 				DataName='Rotor'
-				OuterDiameter='54.7mm'
+				OuterDiameter='54.4mm'
 				InnerDiameter='18mm'
-				Length='350mm'
+				Length='110mm'
 				SteelType='steel_1010'
 				NumberOfSlots=30
 				SlotType='1'
@@ -1025,7 +1025,7 @@ $begin 'AnsoftProject'
 				InputHalfTurnLength=true
 				HalfTurnLength='0mm'
 				ParallelBranches=1
-				ConductorsPerSlot='22'
+				ConductorsPerSlot='200'
 				CoilPitch=7
 				EndAdjustment='0mm'
 				BaseInnerRadius='10mm'
@@ -1098,28 +1098,15 @@ $begin 'AnsoftProject'
 					ID=0
 					SetupType='TPIM'
 					Enabled=true
-					RatedOutputPower='1100W'
+					RatedOutputPower='1000W'
 					RatedVoltage='380V'
-					RatedSpeed='1450rpm'
+					RatedSpeed='1470rpm'
 					OperatingTemperature='75cel'
 					OperationType='Motor'
 					LoadType='ConstPower'
 					Frequency='50Hz'
 					WindingConnection=0
 				$end 'Setup1'
-				$begin 'Setup2'
-					ID=1
-					SetupType='TPIM'
-					Enabled=true
-					RatedOutputPower='800W'
-					RatedVoltage='380V'
-					RatedSpeed='1450rpm'
-					OperatingTemperature='75cel'
-					OperationType='Motor'
-					LoadType='ConstPower'
-					Frequency='50Hz'
-					WindingConnection=0
-				$end 'Setup2'
 			$end 'SolveSetups'
 		$end 'AnalysisSetup'
 		$begin 'Optimetrics'
@@ -1144,37 +1131,17 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('AirGapFluxDensityParameter', 1, 103, false, SimValueID=557, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InputCurrent', 1, 77, false, SimValueID=558, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('RotorTeethFluxDensityParameter', 1, 103, false, SimValueID=559, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('StatorTeethFluxDensityParameter', 1, 103, false, SimValueID=560, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('ArmatureCoreSteelConsumptionParameter', 1, 158, false, SimValueID=561, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('PowerFactor', 1, 90, false, SimValueID=562, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('OutputPower', 1, 59, false, SimValueID=563, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('StatorYokeFluxDensityParameter', 1, 103, false, SimValueID=564, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						$begin 'Sweeps'
-							$begin 'Sweep'
-								Variable='X'
-								Column='0'
-								Units=''
-							$end 'Sweep'
-						$end 'Sweeps'
-					$end 'SimDataExtractor'
-				$end 'Solution'
-			$end 'SimSetup'
-			$begin 'SimSetup'
-				TypeName='BaseSetup'
-				ID=529
-				Name='Setup2'
-				$begin 'Solution'
-					ID=530
-					Name='Performance'
-					$begin 'SimDataExtractor'
-						$begin 'QuantityIDs'
-							NextUniqueID=0
-							MoveBackwards=false
-							IDMap()
-						$end 'QuantityIDs'
+						SimValue('AirGapFluxDensityParameter', 1, 103, false, SimValueID=603, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InputCurrent', 1, 77, false, SimValueID=604, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('RotorTeethFluxDensityParameter', 1, 103, false, SimValueID=605, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('StatorTeethFluxDensityParameter', 1, 103, false, SimValueID=606, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('ArmatureCoreSteelConsumptionParameter', 1, 158, false, SimValueID=607, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('PowerFactor', 1, 90, false, SimValueID=608, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('OutputPower', 1, 59, false, SimValueID=609, 53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('StatorYokeFluxDensityParameter', 1, 103, false, SimValueID=610, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('BreakDownPhaseCurrentParameter', 1, 77, false, SimValueID=939, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('MagnetizingCurrentParameter', 1, 77, false, SimValueID=957, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('StatorPhaseCurrentParameter', 1, 77, false, SimValueID=958, 53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='X'
@@ -1186,16 +1153,11 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=582
+				V=1053
 				$begin 'Setup'
 					N='Setup1'
-					V=582
-					Soln(N='Performance', V=582)
-				$end 'Setup'
-				$begin 'Setup'
-					N='Setup2'
-					V=582
-					Soln(N='Performance', V=582)
+					V=1053
+					Soln(N='Performance', V=1053)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -1203,11 +1165,6 @@ $begin 'AnsoftProject'
 					N='Setup1'
 					I=0
 					Soln(N='Performance', I=1)
-				$end 'Setup'
-				$begin 'Setup'
-					N='Setup2'
-					I=529
-					Soln(N='Performance', I=530)
 				$end 'Setup'
 			$end 'ID Map'
 		$end 'SolutionManager'
@@ -1227,14 +1184,14 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Machine(Machine(Frame(ActivePage('Winding Editor', View(WindowPos(3, -1, -1, -8, -31, 119, 11, 1506, 716)), View(WindowPos(3, -1, -1, -8, -31, 119, 11, 1506, 716))))))
+						Machine(Machine(Frame(ActivePage('Winding Editor', View(WindowPos(5, -1, -1, -8, -31, 119, 11, 1506, 716)), View(WindowPos(5, -1, -1, -8, -31, 119, 11, 1506, 716))))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
 					$begin 'ReportManager'
 						$begin 'Reports'
 							$begin 'Data Table 1'
-								ReportID=17
+								ReportID=35
 								ReportName='Data Table 1'
 								$begin 'TraceDef'
 									TraceDefinitionType='TraceDefinition'
@@ -1248,8 +1205,8 @@ $begin 'AnsoftProject'
 											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
-									ID=16
-									VersionID=17
+									ID=34
+									VersionID=35
 									Name='AirGapFluxDensityParameter'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -1292,7 +1249,7 @@ $begin 'AnsoftProject'
 								$end 'TraceDef'
 							$end 'Data Table 1'
 							$begin 'Data Table 2'
-								ReportID=19
+								ReportID=37
 								ReportName='Data Table 2'
 								$begin 'TraceDef'
 									TraceDefinitionType='TraceDefinition'
@@ -1302,186 +1259,12 @@ $begin 'AnsoftProject'
 											SolutionID=1
 											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
 												ReportType=0
-												SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=18
-									VersionID=19
-									Name='InputCurrent'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='RSpeed'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='InputCurrent'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Special'
-												SweepVariableName='RSpeed'
-												HasMinMaxLimit=false
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 2'
-							$begin 'Data Table 3'
-								ReportID=21
-								ReportName='Data Table 3'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
 												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
-									ID=20
-									VersionID=21
-									Name='RotorTeethFluxDensityParameter'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='X'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='RotorTeethFluxDensityParameter'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Regular'
-												SubsweepChoiceType='All'
-												SweepVariableName='X'
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 3'
-							$begin 'XY Plot 1'
-								ReportID=23
-								ReportName='XY Plot 1'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=22
-									VersionID=23
-									Name='AirGapFluxDensityParameter'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='X'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='AirGapFluxDensityParameter'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Regular'
-												SubsweepChoiceType='All'
-												SweepVariableName='X'
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'XY Plot 1'
-							$begin 'Data Table 4'
-								ReportID=25
-								ReportName='Data Table 4'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=24
-									VersionID=25
+									ID=36
+									VersionID=37
 									Name='StatorTeethFluxDensityParameter'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -1522,672 +1305,144 @@ $begin 'AnsoftProject'
 									$end 'PointsetDefinition'
 									DesignInstanceID=1
 								$end 'TraceDef'
+							$end 'Data Table 2'
+							$begin 'Data Table 3'
+								ReportID=39
+								ReportName='Data Table 3'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=0
+											SolutionID=1
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=38
+									VersionID=39
+									Name='StatorPhaseCurrentParameter'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='X'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='StatorPhaseCurrentParameter'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Regular'
+												SubsweepChoiceType='All'
+												SweepVariableName='X'
+											$end '0'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=1
+								$end 'TraceDef'
+							$end 'Data Table 3'
+							$begin 'Data Table 4'
+								ReportID=41
+								ReportName='Data Table 4'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=0
+											SolutionID=1
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=40
+									VersionID=41
+									Name='InputCurrent'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='RSpeed'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='InputCurrent'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Special'
+												SweepVariableName='RSpeed'
+												HasMinMaxLimit=false
+											$end '0'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=1
+								$end 'TraceDef'
 							$end 'Data Table 4'
-							$begin 'Data Table 5'
-								ReportID=27
-								ReportName='Data Table 5'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=26
-									VersionID=27
-									Name='ArmatureCoreSteelConsumptionParameter'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='X'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='ArmatureCoreSteelConsumptionParameter'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Regular'
-												SubsweepChoiceType='All'
-												SweepVariableName='X'
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 5'
-							$begin 'Data Table 6'
-								ReportID=29
-								ReportName='Data Table 6'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=28
-									VersionID=29
-									Name='PowerFactor'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='RSpeed'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='PowerFactor'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Special'
-												SweepVariableName='RSpeed'
-												HasMinMaxLimit=false
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 6'
-							$begin 'Data Table 7'
-								ReportID=31
-								ReportName='Data Table 7'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=30
-									VersionID=31
-									Name='OutputPower'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='RSpeed'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='OutputPower'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Special'
-												SweepVariableName='RSpeed'
-												HasMinMaxLimit=false
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 7'
-							$begin 'Data Table 8'
-								ReportID=33
-								ReportName='Data Table 8'
-								$begin 'TraceDef'
-									TraceDefinitionType='TraceDefinition'
-									$begin 'DesignSolnDefn'
-										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-											DesignID=0
-											SolutionID=1
-											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-												ReportType=0
-												SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
-										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
-									$end 'DesignSolnDefn'
-									ID=32
-									VersionID=33
-									Name='StatorYokeFluxDensityParameter'
-									TieNameToExpr=true
-									$begin 'Components'
-										$begin 'TraceComponentDefinition'
-											Expr='X'
-										$end 'TraceComponentDefinition'
-										$begin 'TraceComponentDefinition'
-											Expr='StatorYokeFluxDensityParameter'
-										$end 'TraceComponentDefinition'
-									$end 'Components'
-									$begin 'ExtendedTraceInfo'
-										NumPoints=0
-										TraceType=0
-										Offset=0
-										XLabel=''
-										SamplingPeriod='0'
-										SamplingPeriodOffset='0'
-										AutoDelay=true
-										DelayValue='0ps'
-										AutoCompCrossAmplitude=true
-										CrossingAmplitude='0mV'
-										YAxis=1
-										AutoCompEyeMeasurementPoint=true
-										EyeMeasurementPoint='0ps'
-									$end 'ExtendedTraceInfo'
-									$begin 'TraceFamiliesDisplayDefinition'
-										DisplayFamiliesType='DisplayAll'
-									$end 'TraceFamiliesDisplayDefinition'
-									$begin 'PointsetDefinition'
-										$begin 'SubsweepDefParamsContainer'
-											$begin '0'
-												SubsweepType='Regular'
-												SubsweepChoiceType='All'
-												SweepVariableName='X'
-											$end '0'
-										$end 'SubsweepDefParamsContainer'
-										FamilyBlock()
-									$end 'PointsetDefinition'
-									DesignInstanceID=1
-								$end 'TraceDef'
-							$end 'Data Table 8'
 						$end 'Reports'
-						NextUniqueID=34
+						NextUniqueID=42
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=34
+							NextUniqueID=42
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
 					$begin 'Reports'
 						$begin 'Data Table 1'
-							ReportID=17
+							ReportID=35
 							$begin 'Report2D'
 								name='Data Table 1'
-								ReportID=17
+								ReportID=35
 								ReportType=0
 								DisplayType=4
 								Title=''
 								Domain=''
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
-										TraceDefID=16
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=17
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=434
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=609
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-										$begin 'MapItem'
-											ItemID=11
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=431
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=10
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=606
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-										$begin 'MapItem'
-											ItemID=15
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=431
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=14
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=606
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(16, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 1'
-						$begin 'Data Table 2'
-							ReportID=19
-							$begin 'Report2D'
-								name='Data Table 2'
-								ReportID=19
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=18
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=9
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=431
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=606
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(18, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 2'
-						$begin 'Data Table 3'
-							ReportID=21
-							$begin 'Report2D'
-								name='Data Table 3'
-								ReportID=21
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=20
+										TraceDefID=34
 										Type='Continuous'
 										Axis='Y1'
 									$end 'Graph2D'
@@ -2288,39 +1543,6 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=431
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=606
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-										$begin 'MapItem'
 											ItemID=11
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
@@ -2357,7 +1579,320 @@ $begin 'AnsoftProject'
 									IsViewAttribServer=false
 									ViewID=-1
 									$begin 'SourceIDMap'
-										IDMapItem(20, 0, -1, 7)
+										IDMapItem(34, 0, -1, 7)
+									$end 'SourceIDMap'
+									$begin 'TraceCharacteristicsMgr'
+									$end 'TraceCharacteristicsMgr'
+									$begin 'CartesianXMarkerManager'
+										RefMarkerID=-1
+										CurrentMarkerID=-1
+										$begin 'ReferenceCurves'
+										$end 'ReferenceCurves'
+									$end 'CartesianXMarkerManager'
+									$begin 'CartesianYMarkerManager'
+									$end 'CartesianYMarkerManager'
+									DigitalClosedRecordsItem[0:]
+									XAxisStackID=-1
+									$begin 'AllTransSrcDwg'
+										$begin 'PT'
+											ID=25
+											TransSrcDwg(-1, 0, 5)
+										$end 'PT'
+									$end 'AllTransSrcDwg'
+									$begin 'AllPtSVID'
+									$end 'AllPtSVID'
+								$end 'PlotDisplayDataManager'
+							$end 'Report2D'
+						$end 'Data Table 1'
+						$begin 'Data Table 2'
+							ReportID=37
+							$begin 'Report2D'
+								name='Data Table 2'
+								ReportID=37
+								ReportType=0
+								DisplayType=4
+								Title=''
+								Domain=''
+								$begin 'Graph2DsV2'
+									$begin 'Graph2D'
+										TraceDefID=36
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+								$end 'Graph2DsV2'
+								$begin 'PlotDisplayDataManager'
+									NextUniqueID=13
+									MoveBackwards=false
+									$begin 'PlotHeaderDataSource'
+										CompanyName=''
+										ShowDesignName=true
+										ProjectFileName=''
+									$end 'PlotHeaderDataSource'
+									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
+									$begin 'SourceList'
+									$end 'SourceList'
+									$begin 'DocAttributes'
+										$begin 'PlotAttributeStoreMap'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=7
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=7
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=1
+															LineColor(R=255, G=0, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HorizontalLeftTriangle'
+														SymbolColor(R=0, G=25, B=185)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=0
+													$begin 'HeaderRenderAttribute'
+														$begin 'TitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-19
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TitleFont'
+														$begin 'SubtitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-13
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'SubtitleFont'
+													$end 'HeaderRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocAttributes'
+									$begin 'DocDefaultAttributes'
+										$begin 'PlotAttributeStoreMap'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocDefaultAttributes'
+									$begin 'PerViewPlotAttributeStoreMap'
+										$begin 'MapItem'
+											ItemID=11
+											$begin 'PlotAttributeStoreMap'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=5
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=75
+																Left=75
+																Bottom=9925
+																Right=296
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=10
+														$begin 'OverlayLayoutAttribute'
+															$begin 'BoundingRect'
+																Top=225
+																Left=471
+																Bottom=9775
+																Right=9775
+															$end 'BoundingRect'
+															ModifySize=false
+															ModifyPosition=false
+														$end 'OverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+											$end 'PlotAttributeStoreMap'
+										$end 'MapItem'
+									$end 'PerViewPlotAttributeStoreMap'
+									IsViewAttribServer=false
+									ViewID=-1
+									$begin 'SourceIDMap'
+										IDMapItem(36, 0, -1, 7)
+									$end 'SourceIDMap'
+									$begin 'TraceCharacteristicsMgr'
+									$end 'TraceCharacteristicsMgr'
+									$begin 'CartesianXMarkerManager'
+										RefMarkerID=-1
+										CurrentMarkerID=-1
+										$begin 'ReferenceCurves'
+										$end 'ReferenceCurves'
+									$end 'CartesianXMarkerManager'
+									$begin 'CartesianYMarkerManager'
+									$end 'CartesianYMarkerManager'
+									DigitalClosedRecordsItem[0:]
+									XAxisStackID=-1
+									$begin 'AllTransSrcDwg'
+										$begin 'PT'
+											ID=25
+											TransSrcDwg(-1, 0, 5)
+										$end 'PT'
+									$end 'AllTransSrcDwg'
+									$begin 'AllPtSVID'
+									$end 'AllPtSVID'
+								$end 'PlotDisplayDataManager'
+							$end 'Report2D'
+						$end 'Data Table 2'
+						$begin 'Data Table 3'
+							ReportID=39
+							$begin 'Report2D'
+								name='Data Table 3'
+								ReportID=39
+								ReportType=0
+								DisplayType=4
+								Title=''
+								Domain=''
+								$begin 'Graph2DsV2'
+									$begin 'Graph2D'
+										TraceDefID=38
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+								$end 'Graph2DsV2'
+								$begin 'PlotDisplayDataManager'
+									NextUniqueID=9
+									MoveBackwards=false
+									$begin 'PlotHeaderDataSource'
+										CompanyName=''
+										ShowDesignName=true
+										ProjectFileName=''
+									$end 'PlotHeaderDataSource'
+									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
+									$begin 'SourceList'
+									$end 'SourceList'
+									$begin 'DocAttributes'
+										$begin 'PlotAttributeStoreMap'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=7
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=7
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=1
+															LineColor(R=255, G=0, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HorizontalLeftTriangle'
+														SymbolColor(R=0, G=25, B=185)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=0
+													$begin 'HeaderRenderAttribute'
+														$begin 'TitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-19
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TitleFont'
+														$begin 'SubtitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-13
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'SubtitleFont'
+													$end 'HeaderRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocAttributes'
+									$begin 'DocDefaultAttributes'
+										$begin 'PlotAttributeStoreMap'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocDefaultAttributes'
+									$begin 'PerViewPlotAttributeStoreMap'
+									$end 'PerViewPlotAttributeStoreMap'
+									IsViewAttribServer=false
+									ViewID=-1
+									$begin 'SourceIDMap'
+										IDMapItem(38, 0, -1, 7)
 									$end 'SourceIDMap'
 									$begin 'TraceCharacteristicsMgr'
 									$end 'TraceCharacteristicsMgr'
@@ -2382,613 +1917,18 @@ $begin 'AnsoftProject'
 								$end 'PlotDisplayDataManager'
 							$end 'Report2D'
 						$end 'Data Table 3'
-						$begin 'XY Plot 1'
-							ReportID=23
-							$begin 'Report2D'
-								name='XY Plot 1'
-								ReportID=23
-								ReportType=0
-								DisplayType=1
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=22
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=23
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(AxisX=1, AxisY1=2, AxisY2=8, AxisY3=9, AxisY4=10, Grid=11, Header=0, Legend=5, XYHorizScroller=7)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=11
-													$begin 'CartesianGridDescAttribute'
-														ShowXMinor=true
-														ShowYMinor=true
-														ShowXMajor=true
-														ShowYMajor=true
-														ShowBorder=true
-													$end 'CartesianGridDescAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=21
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=21
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=5
-													$begin 'LegendRenderAttribute'
-														$begin 'LegendTableAttrib'
-															$begin 'TableRenderAttribute'
-																$begin 'TableFontAttrib'
-																	$begin 'FontAttribute'
-																		$begin 'Font'
-																			Height=-11
-																			Width=0
-																			Escapement=0
-																			Orientation=0
-																			Weight=400
-																			Italic=0
-																			Underline=0
-																			StrikeOut=0
-																			CharSet=0
-																			OutPrecision=7
-																			ClipPrecision=48
-																			Quality=6
-																			PitchAndFamily=0
-																			FaceName='Arial'
-																		$end 'Font'
-																		Color(R=0, G=0, B=0)
-																	$end 'FontAttribute'
-																$end 'TableFontAttrib'
-																$begin 'TableTitleFontAttrib'
-																	$begin 'FontAttribute'
-																		$begin 'Font'
-																			Height=-11
-																			Width=0
-																			Escapement=0
-																			Orientation=0
-																			Weight=400
-																			Italic=0
-																			Underline=0
-																			StrikeOut=0
-																			CharSet=0
-																			OutPrecision=7
-																			ClipPrecision=48
-																			Quality=6
-																			PitchAndFamily=0
-																			FaceName='Arial'
-																		$end 'Font'
-																		Color(R=0, G=0, B=0)
-																	$end 'FontAttribute'
-																$end 'TableTitleFontAttrib'
-																TableBorderLineWidth=1
-																TableBorderLineColor=0
-																TableGridLineWidth=1
-																TableGridLineColor=12632256
-																TableBackgroundColor=16777215
-																TableHeaderBackgroundColor=14408667
-															$end 'TableRenderAttribute'
-														$end 'LegendTableAttrib'
-														ShowTraceName=true
-														ShowSolutionName=true
-														ShowVariationKey=true
-														DockMode='None'
-													$end 'LegendRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=1
-													$begin 'LineAxisRenderAttribute'
-														DecimalFieldWidth=3
-														DecimalFieldPrecision=2
-														ManualTitle=''
-														AxisColor(R=0, G=0, B=0)
-														MinScale=0
-														MaxScale=1
-														TickSpacing=1
-														ManualUnits=false
-														Units='mm'
-														AxisScale='Linear'
-														NumberFormat='Auto'
-														$begin 'TextFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-12
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TextFont'
-														InfMapMode=false
-														InfMapValue=1.79769313486232e+306
-														AutoRangeMin=true
-														AutoRangeMax=true
-														AutoSpacing=true
-														kNumMinorDivisions=5
-														ShowAxisTitle=true
-														ShowAxisUnits=true
-														vwm='FullWnd'
-														viewWndWd=#nan
-														ActivateMargins=true
-														MarginPercent=0
-													$end 'LineAxisRenderAttribute'
-												$end 'SubMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=2
-													$begin 'LineAxisRenderAttribute'
-														DecimalFieldWidth=3
-														DecimalFieldPrecision=2
-														ManualTitle=''
-														AxisColor(R=0, G=0, B=0)
-														MinScale=0
-														MaxScale=1
-														TickSpacing=1
-														ManualUnits=false
-														Units='mm'
-														AxisScale='Linear'
-														NumberFormat='Auto'
-														$begin 'TextFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-12
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TextFont'
-														InfMapMode=false
-														InfMapValue=1.79769313486232e+306
-														AutoRangeMin=true
-														AutoRangeMax=true
-														AutoSpacing=true
-														kNumMinorDivisions=5
-														ShowAxisTitle=true
-														ShowAxisUnits=true
-														vwm='FullWnd'
-														viewWndWd=#nan
-														ActivateMargins=true
-														MarginPercent=0
-													$end 'LineAxisRenderAttribute'
-												$end 'SubMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=8
-													$begin 'LineAxisRenderAttribute'
-														DecimalFieldWidth=3
-														DecimalFieldPrecision=2
-														ManualTitle=''
-														AxisColor(R=0, G=0, B=0)
-														MinScale=0
-														MaxScale=1
-														TickSpacing=1
-														ManualUnits=false
-														Units='mm'
-														AxisScale='Linear'
-														NumberFormat='Auto'
-														$begin 'TextFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-12
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TextFont'
-														InfMapMode=false
-														InfMapValue=1.79769313486232e+306
-														AutoRangeMin=true
-														AutoRangeMax=true
-														AutoSpacing=true
-														kNumMinorDivisions=5
-														ShowAxisTitle=true
-														ShowAxisUnits=true
-														vwm='FullWnd'
-														viewWndWd=#nan
-														ActivateMargins=true
-														MarginPercent=0
-													$end 'LineAxisRenderAttribute'
-												$end 'SubMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=9
-													$begin 'LineAxisRenderAttribute'
-														DecimalFieldWidth=3
-														DecimalFieldPrecision=2
-														ManualTitle=''
-														AxisColor(R=0, G=0, B=0)
-														MinScale=0
-														MaxScale=1
-														TickSpacing=1
-														ManualUnits=false
-														Units='mm'
-														AxisScale='Linear'
-														NumberFormat='Auto'
-														$begin 'TextFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-12
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TextFont'
-														InfMapMode=false
-														InfMapValue=1.79769313486232e+306
-														AutoRangeMin=true
-														AutoRangeMax=true
-														AutoSpacing=true
-														kNumMinorDivisions=5
-														ShowAxisTitle=true
-														ShowAxisUnits=true
-														vwm='FullWnd'
-														viewWndWd=#nan
-														ActivateMargins=true
-														MarginPercent=0
-													$end 'LineAxisRenderAttribute'
-												$end 'SubMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=10
-													$begin 'LineAxisRenderAttribute'
-														DecimalFieldWidth=3
-														DecimalFieldPrecision=2
-														ManualTitle=''
-														AxisColor(R=0, G=0, B=0)
-														MinScale=0
-														MaxScale=1
-														TickSpacing=1
-														ManualUnits=false
-														Units='mm'
-														AxisScale='Linear'
-														NumberFormat='Auto'
-														$begin 'TextFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-12
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TextFont'
-														InfMapMode=false
-														InfMapValue=1.79769313486232e+306
-														AutoRangeMin=true
-														AutoRangeMax=true
-														AutoSpacing=true
-														kNumMinorDivisions=5
-														ShowAxisTitle=true
-														ShowAxisUnits=true
-														vwm='FullWnd'
-														viewWndWd=#nan
-														ActivateMargins=true
-														MarginPercent=0
-													$end 'LineAxisRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=20
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=886
-																Left=985
-																Bottom=9754
-																Right=8805
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=12
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=886
-																Left=985
-																Bottom=9754
-																Right=8805
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=19
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=750
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=15
-														$begin 'CartesianAxisLayoutAttribute'
-															$begin 'AxisRect'
-																Top=75
-																Left=8805
-																Bottom=9925
-																Right=9925
-															$end 'AxisRect'
-															$begin 'GridRect'
-																Top=886
-																Left=985
-																Bottom=9754
-																Right=8805
-															$end 'GridRect'
-														$end 'CartesianAxisLayoutAttribute'
-													$end 'SubMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=16
-														$begin 'CartesianAxisLayoutAttribute'
-															$begin 'AxisRect'
-																Top=75
-																Left=775
-																Bottom=885
-																Right=8805
-															$end 'AxisRect'
-															$begin 'GridRect'
-																Top=886
-																Left=985
-																Bottom=9754
-																Right=8805
-															$end 'GridRect'
-														$end 'CartesianAxisLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=2e-010
-															X_fwd=3
-															X_fpr=2
-															Y1_spc=0.0005
-															Y1_fwd=5
-															Y1_fpr=2
-														$end 'CartesianCurveGroupLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=6
-														$begin 'DockableOverlayLayoutAttribute'
-															$begin 'Dock_0'
-																$begin 'OverlayLayoutAttribute'
-																	$begin 'BoundingRect'
-																		Top=4850
-																		Left=850
-																		Bottom=9850
-																		Right=8350
-																	$end 'BoundingRect'
-																	ModifySize=false
-																	ModifyPosition=false
-																$end 'OverlayLayoutAttribute'
-															$end 'Dock_0'
-															$begin 'Dock_1'
-																$begin 'OverlayLayoutAttribute'
-																	$begin 'BoundingRect'
-																		Top=5000
-																		Left=0
-																		Bottom=10000
-																		Right=10000
-																	$end 'BoundingRect'
-																	ModifySize=false
-																	ModifyPosition=false
-																$end 'OverlayLayoutAttribute'
-															$end 'Dock_1'
-															$begin 'Dock_2'
-																$begin 'OverlayLayoutAttribute'
-																	$begin 'BoundingRect'
-																		Top=0
-																		Left=0
-																		Bottom=5000
-																		Right=10000
-																	$end 'BoundingRect'
-																	ModifySize=false
-																	ModifyPosition=false
-																$end 'OverlayLayoutAttribute'
-															$end 'Dock_2'
-														$end 'DockableOverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(22, 0, -1, 21)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=1
-											TransSrcDwg(-1, 0, 19, 1, 15, 2, 16, 5, 6, 11, 12, 21, 22)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-										PtID(1, -1, 4)
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'XY Plot 1'
 						$begin 'Data Table 4'
-							ReportID=25
+							ReportID=41
 							$begin 'Report2D'
 								name='Data Table 4'
-								ReportID=25
+								ReportID=41
 								ReportType=0
 								DisplayType=4
 								Title=''
 								Domain=''
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
-										TraceDefID=24
+										TraceDefID=40
 										Type='Continuous'
 										Axis='Y1'
 									$end 'Graph2D'
@@ -3088,44 +2028,11 @@ $begin 'AnsoftProject'
 										$end 'PlotAttributeStoreMap'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=738
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=913
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
 									$end 'PerViewPlotAttributeStoreMap'
 									IsViewAttribServer=false
 									ViewID=-1
 									$begin 'SourceIDMap'
-										IDMapItem(24, 0, -1, 7)
+										IDMapItem(40, 0, -1, 7)
 									$end 'SourceIDMap'
 									$begin 'TraceCharacteristicsMgr'
 									$end 'TraceCharacteristicsMgr'
@@ -3150,783 +2057,68 @@ $begin 'AnsoftProject'
 								$end 'PlotDisplayDataManager'
 							$end 'Report2D'
 						$end 'Data Table 4'
-						$begin 'Data Table 5'
-							ReportID=27
-							$begin 'Report2D'
-								name='Data Table 5'
-								ReportID=27
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=26
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=9
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=738
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=913
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(26, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 5'
-						$begin 'Data Table 6'
-							ReportID=29
-							$begin 'Report2D'
-								name='Data Table 6'
-								ReportID=29
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=28
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=9
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=738
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=913
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(28, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 6'
-						$begin 'Data Table 7'
-							ReportID=31
-							$begin 'Report2D'
-								name='Data Table 7'
-								ReportID=31
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=30
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=9
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'DataTableDataAttribute'
-														DecimalFieldWidth=8
-														DecimalFieldPrecision=6
-														Units=''
-														NumberFormat='Decimal'
-														ComplexFormat='Real Imaginary'
-														DataRepresentationType='UnsignedDecimal'
-														SpecifyMin=false
-														MinSpecified=false
-														MinValue='0'
-														SpecifyMax=false
-														MaxSpecified=false
-														MaxValue='0'
-														PareToType='No'
-													$end 'DataTableDataAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=738
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=913
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(30, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 7'
-						$begin 'Data Table 8'
-							ReportID=33
-							$begin 'Report2D'
-								name='Data Table 8'
-								ReportID=33
-								ReportType=0
-								DisplayType=4
-								Title=''
-								Domain=''
-								$begin 'Graph2DsV2'
-									$begin 'Graph2D'
-										TraceDefID=32
-										Type='Continuous'
-										Axis='Y1'
-									$end 'Graph2D'
-								$end 'Graph2DsV2'
-								$begin 'PlotDisplayDataManager'
-									NextUniqueID=9
-									MoveBackwards=false
-									$begin 'PlotHeaderDataSource'
-										CompanyName=''
-										ShowDesignName=true
-										ProjectFileName=''
-									$end 'PlotHeaderDataSource'
-									StockNameIDMap(DataTable=3, Header=0, PrimarySweep=1)
-									$begin 'SourceList'
-									$end 'SourceList'
-									$begin 'DocAttributes'
-										$begin 'PlotAttributeStoreMap'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveCartesianAttribute'
-														YAxis='Y1'
-													$end 'CurveCartesianAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=7
-													$begin 'CurveRenderAttribute'
-														$begin 'LineRenderAttribute'
-															LineStyle='Solid'
-															LineWidth=1
-															LineColor(R=255, G=0, B=0)
-														$end 'LineRenderAttribute'
-														TraceType='Continuous'
-														SymbolType='HorizontalLeftTriangle'
-														SymbolColor(R=0, G=25, B=185)
-														ShowSymbols=false
-														SymbolFrequency=15
-														ShowArrows=false
-													$end 'CurveRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-											$begin 'MainMapItem'
-												$begin 'SubMapItem'
-													DataSourceID=0
-													$begin 'HeaderRenderAttribute'
-														$begin 'TitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-19
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'TitleFont'
-														$begin 'SubtitleFont'
-															$begin 'FontAttribute'
-																$begin 'Font'
-																	Height=-13
-																	Width=0
-																	Escapement=0
-																	Orientation=0
-																	Weight=400
-																	Italic=0
-																	Underline=0
-																	StrikeOut=0
-																	CharSet=0
-																	OutPrecision=7
-																	ClipPrecision=48
-																	Quality=6
-																	PitchAndFamily=0
-																	FaceName='Arial'
-																$end 'Font'
-																Color(R=0, G=0, B=0)
-															$end 'FontAttribute'
-														$end 'SubtitleFont'
-													$end 'HeaderRenderAttribute'
-												$end 'SubMapItem'
-											$end 'MainMapItem'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocAttributes'
-									$begin 'DocDefaultAttributes'
-										$begin 'PlotAttributeStoreMap'
-										$end 'PlotAttributeStoreMap'
-									$end 'DocDefaultAttributes'
-									$begin 'PerViewPlotAttributeStoreMap'
-										$begin 'MapItem'
-											ItemID=6
-											$begin 'PlotAttributeStoreMap'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=5
-														$begin 'BasicLayoutAttribute'
-															$begin 'LayoutRect'
-																Top=75
-																Left=75
-																Bottom=9925
-																Right=465
-															$end 'LayoutRect'
-														$end 'BasicLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-												$begin 'MainMapItem'
-													$begin 'SubMapItem'
-														DataSourceID=4
-														$begin 'OverlayLayoutAttribute'
-															$begin 'BoundingRect'
-																Top=225
-																Left=640
-																Bottom=9775
-																Right=9775
-															$end 'BoundingRect'
-															ModifySize=false
-															ModifyPosition=false
-														$end 'OverlayLayoutAttribute'
-													$end 'SubMapItem'
-												$end 'MainMapItem'
-											$end 'PlotAttributeStoreMap'
-										$end 'MapItem'
-									$end 'PerViewPlotAttributeStoreMap'
-									IsViewAttribServer=false
-									ViewID=-1
-									$begin 'SourceIDMap'
-										IDMapItem(32, 0, -1, 7)
-									$end 'SourceIDMap'
-									$begin 'TraceCharacteristicsMgr'
-									$end 'TraceCharacteristicsMgr'
-									$begin 'CartesianXMarkerManager'
-										RefMarkerID=-1
-										CurrentMarkerID=-1
-										$begin 'ReferenceCurves'
-										$end 'ReferenceCurves'
-									$end 'CartesianXMarkerManager'
-									$begin 'CartesianYMarkerManager'
-									$end 'CartesianYMarkerManager'
-									DigitalClosedRecordsItem[0:]
-									XAxisStackID=-1
-									$begin 'AllTransSrcDwg'
-										$begin 'PT'
-											ID=25
-											TransSrcDwg(-1, 0, 5)
-										$end 'PT'
-									$end 'AllTransSrcDwg'
-									$begin 'AllPtSVID'
-									$end 'AllPtSVID'
-								$end 'PlotDisplayDataManager'
-							$end 'Report2D'
-						$end 'Data Table 8'
 					$end 'Reports'
 					$begin 'ReportsWindowInfoList'
 						$begin 'Data Table 1'
-							ReportID=17
+							ReportID=35
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
+									$begin 'ViewInfo'
+										$begin 'WrapperView'
+											ID(11)
+										$end 'WrapperView'
+										$begin 'WrapperDoc'
+											HiddenDrawings()
+											$begin 'DispType'
+												PlotType=25
+												$begin 'CurveMed'
+													$begin 'MedCamera'
+													$end 'MedCamera'
+												$end 'CurveMed'
+											$end 'DispType'
+										$end 'WrapperDoc'
+										WindowPos(WindowPos(5, -1, -1, -8, -31, 0, 0, 1347, 492))
+									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 1'
 						$begin 'Data Table 2'
-							ReportID=19
+							ReportID=37
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
+									$begin 'ViewInfo'
+										$begin 'WrapperView'
+											ID(11)
+										$end 'WrapperView'
+										$begin 'WrapperDoc'
+											HiddenDrawings()
+											$begin 'DispType'
+												PlotType=25
+												$begin 'CurveMed'
+													$begin 'MedCamera'
+													$end 'MedCamera'
+												$end 'CurveMed'
+											$end 'DispType'
+										$end 'WrapperDoc'
+										WindowPos(WindowPos(3, -1, -1, -8, -31, 26, 26, 1373, 518))
+									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 2'
 						$begin 'Data Table 3'
-							ReportID=21
+							ReportID=39
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 3'
-						$begin 'XY Plot 1'
-							ReportID=23
-							$begin 'WindowInfoList'
-								$begin 'Report2D'
-								$end 'Report2D'
-							$end 'WindowInfoList'
-						$end 'XY Plot 1'
 						$begin 'Data Table 4'
-							ReportID=25
+							ReportID=41
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Data Table 4'
-						$begin 'Data Table 5'
-							ReportID=27
-							$begin 'WindowInfoList'
-								$begin 'Report2D'
-								$end 'Report2D'
-							$end 'WindowInfoList'
-						$end 'Data Table 5'
-						$begin 'Data Table 6'
-							ReportID=29
-							$begin 'WindowInfoList'
-								$begin 'Report2D'
-								$end 'Report2D'
-							$end 'WindowInfoList'
-						$end 'Data Table 6'
-						$begin 'Data Table 7'
-							ReportID=31
-							$begin 'WindowInfoList'
-								$begin 'Report2D'
-								$end 'Report2D'
-							$end 'WindowInfoList'
-						$end 'Data Table 7'
-						$begin 'Data Table 8'
-							ReportID=33
-							$begin 'WindowInfoList'
-								$begin 'Report2D'
-								$end 'Report2D'
-							$end 'WindowInfoList'
-						$end 'Data Table 8'
 					$end 'ReportsWindowInfoList'
 				$end 'ReportSetup'
 			$end 'RMxprtDesignInstance'
@@ -3946,7 +2138,7 @@ $begin 'ProjectPreview'
 		Notes=''
 		Factory='RMxprt'
 		IsSolved=true
-		'Nominal Setups'[2: 'Setup1', 'Setup2']
+		'Nominal Setups'[1: 'Setup1']
 		'Optimetrics Setups'[0:]
 		Image64=''
 	$end 'DesignInfo'

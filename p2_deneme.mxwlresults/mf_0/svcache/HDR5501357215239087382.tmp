@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=12
+	NextUniqueID=14
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -86,6 +86,20 @@ $begin 'SimValueInfos'
 			ValueState(103, 16, 1, 1)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=12
+		$begin 'SimValueParams'
+			QuantityName='MagnetizingCurrentParameter'
+			ValueState(77, 10, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=13
+		$begin 'SimValueParams'
+			QuantityName='StatorPhaseCurrentParameter'
+			ValueState(77, 10, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
 	$begin 'DesignMap'
@@ -99,10 +113,10 @@ $begin 'SimValueCache'
 						SimValueContext(53028, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=582
+						VersionID=1053
 						$begin 'MinorVVMap'
 							MajorVariation=''
-							MinorCacheFile='min77791191215239879284.tmp'
+							MinorCacheFile='min4CF032152399462848.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
@@ -112,16 +126,13 @@ $begin 'SimValueCache'
 						SimValueContext(53020, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=582
+						VersionID=1053
 						$begin 'MinorVVMap'
 							MajorVariation=''
-							MinorCacheFile='min77791191215239879285.tmp'
+							MinorCacheFile='min4CF032152399462849.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
-			$end 'ContextMap'
-			$begin 'ContextMap'
-				SolutionID=530
 			$end 'ContextMap'
 		$end 'SolutionMap'
 	$end 'DesignMap'
