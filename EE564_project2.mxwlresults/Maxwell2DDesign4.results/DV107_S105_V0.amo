@@ -1,0 +1,48 @@
+$begin 'ConEngineContinueData'
+	$begin 'MeshSettings'
+		$begin 'GlobalSurfApproximation'
+			SurfDevChoice=0
+			NormalDevChoice=1
+			AspectRatioChoice=1
+			PullToTrueSurf=false
+			SetFacePreservationLevel=0
+		$end 'GlobalSurfApproximation'
+	$end 'MeshSettings'
+	$begin 'MeshOperations'
+		NextUniqueID=0
+		MoveBackwards=false
+		$begin 'Length_Coil'
+			Type='LengthBased'
+			RefineInside=true
+			ID=0
+			Enabled=true
+			Objects(2924, 2936, 2947, 2958, 2969, 2980, 2991, 3002, 3013, 3024, 3035, 3046, 3057, 3068, 3079, 3090, 3101, 3112, 3339, 3352, 3363, 3374, 3385, 3396, 3407, 3418, 3429, 3440, 3451, 3462, 3473, 3484, 3495, 3506, 3517, 3528)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='1.83mm'
+		$end 'Length_Coil'
+		$begin 'Length_Bar'
+			Type='LengthBased'
+			RefineInside=true
+			ID=1
+			Enabled=true
+			Objects(5020, 6337, 6338, 6339, 6340, 6341, 6342, 6343, 6344, 6345, 6346, 6347, 6348, 6349, 6350)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='0.404mm'
+		$end 'Length_Bar'
+		$begin 'Length_Main'
+			Type='LengthBased'
+			RefineInside=true
+			ID=4
+			Enabled=true
+			Objects(615, 3755, 6, 590, 6352, 585)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='3.555mm'
+		$end 'Length_Main'
+	$end 'MeshOperations'
+$end 'ConEngineContinueData'

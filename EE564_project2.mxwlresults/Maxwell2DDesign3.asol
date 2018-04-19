@@ -1,0 +1,137 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002018, month=000000000004, day=000000000019, hour=000000000023, min=000000000003, sec=000000000008)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003407, lin=000000000116, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock80'
+	SolutionName='AdaptivePass'
+	SolutionID=160
+	V=477
+	$begin 'States'
+		F(VID=478, Ver=477)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=478, Ver=477, File='DV478_SOL160_NFSP10_V477.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock80'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=159, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock82'
+	'SolutionKey(SimSetup=159, Instance=\'SolutionDefinition\', Solution=160, VersionID=477)'='SolutionBlock80'
+	'SolutionKey(SimSetup=159, Instance=\'SolutionDefinition\', Solution=161, VersionID=477)'='SolutionBlock81'
+	'SolutionKey(SimSetup=159, Instance=\'fractions=\\\'2\\\'\', Solution=-3, VersionID=0)'='SolutionBlock83'
+$end 'BlockMapName'
+$begin 'SolutionBlock81'
+	SolutionName='LastAdaptive'
+	SolutionID=161
+	V=477
+	$begin 'States'
+		F(VID=478, Ver=477)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(491, -1)
+		$begin 'DataMap'
+			VID=478
+			Ver=477
+			Field(DblID=491, Dir='DV478_SOL161_V477.Field491/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock81'
+$begin 'SolutionBlock82'
+	SimSetupID=159
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=1
+	$begin 'CurrMeshes'
+		IDDblMap(489, 1, 492, 2, 493, 3)
+		$begin 'DataMap'
+			VID=478
+			Ver=0
+			M(DblID=492, Dir='DV478_S159_V0.cmesh492/')
+			M(DblID=493, Dir='DV478_S159_V0.cmesh493/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'MeshOps'
+		OPS(VID=478, Ver=0, ID=0, ID=1, ID=4)
+	$end 'MeshOps'
+	$begin 'LastPassNumbers'
+		LP(VID=478, Ver=0, P=2)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=478, Ver=0, File='DV478_S159_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=478, Ver=0, Dir='DV478_S159_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=478, Ver=0, Dir='DV478_S159_V0_MGI/')
+	$end 'MeshGeomInfo'
+$end 'SolutionBlock82'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell2DDesign3'
+	VersionID=102
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=494
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='fractions=\'2\'', ID=478)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=478, Ver=102, Dir='DV478_V102.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=478, Ver=102, Dir='DV478_MI0_V102.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'SolutionBlock83'
+	ConvSetupName='eConv'
+	MaxPasses='10'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(tri=19656, ee=0.3649913765204181, te=7.17173715414337, p=1, de_ee='(0.36499, N/A)')
+	c(de=0.2407968498968572, tri=26841, ee=0.07804312418844844, te=7.18900647129343, p=2, de_ee='(0.078043, 0.2408)')
+$end 'SolutionBlock83'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock83(pos=3021, lin=106, lvl=0)
+		SolutionBlock80(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=777, lin=21, lvl=0)
+		SolutionBlock81(pos=1276, lin=28, lvl=0)
+		SolutionBlock82(pos=1713, lin=50, lvl=0)
+		SolutionBlock1(pos=2501, lin=83, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3407, lin=116, lvl=0)
+	$end '$index$'
+$end '$index$'

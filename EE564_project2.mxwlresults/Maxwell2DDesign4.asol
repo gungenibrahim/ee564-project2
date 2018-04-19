@@ -1,0 +1,143 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002018, month=000000000004, day=000000000019, hour=000000000023, min=000000000003, sec=000000000008)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003243, lin=000000000124, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock3'
+	SolutionName='Transient'
+	SolutionID=106
+	V=115
+	$begin 'States'
+		F(VID=107, Ver=115)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(135, 0.2)
+		$begin 'DataMap'
+			VID=107
+			Ver=115
+			Field(DblID=135, Dir='DV107_SOL106_V115.Field135/')
+		$end 'DataMap'
+	$end 'Fields'
+	$begin 'PD'
+		NextUniqueID=8
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=1
+			PD(VID=107, Ver=1, File='DV107_SOL106_PD0_V1.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			Ver=1
+			PD(VID=107, Ver=1, File='DV107_SOL106_PD1_V1.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			Ver=1
+			PD(VID=107, Ver=1, File='DV107_SOL106_PD2_V1.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			Ver=1
+			PD(VID=107, Ver=1, File='DV107_SOL106_PD6_V1.sd')
+		$end 'SubData'
+	$end 'PD'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=107, Ver=115, File='DV107_SOL106_NFSP10_V115.sd')
+		$end 'SubData'
+	$end 'NFSP'
+	$begin 'EngineSolutionData'
+		Data(VID=107, Ver=115, Dir='DV107_SOL106_V115.Data/')
+	$end 'EngineSolutionData'
+$end 'SolutionBlock3'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=105, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock4'
+	'SolutionKey(SimSetup=105, Instance=\'SolutionDefinition\', Solution=106, VersionID=115)'='SolutionBlock3'
+$end 'BlockMapName'
+$begin 'SolutionBlock4'
+	SimSetupID=105
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		IDDblMap(134, 0.2)
+		$begin 'DataMap'
+			VID=107
+			Ver=115
+			M(DblID=134, Dir='DV107_S105_V115.cmesh134/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'StartingMesh'
+		IDDblMap(132, -1)
+		$begin 'DataMap'
+			VID=107
+			Ver=0
+			SM(DblID=132, Dir='DV107_S105_V0.smesh132/')
+		$end 'DataMap'
+	$end 'StartingMesh'
+	$begin 'MeshOps'
+		OPS(VID=107, Ver=0, ID=0, ID=1, ID=4)
+	$end 'MeshOps'
+	$begin 'Profiles'
+		P(VID=107, Ver=0, File='DV107_S105_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=107, Ver=0, Dir='DV107_S105_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=107, Ver=0, Dir='DV107_S105_V0_MGI/')
+	$end 'MeshGeomInfo'
+	$begin 'AMOsetup'
+		AMO(VID=107, Ver=0, File='DV107_S105_V0.amo')
+	$end 'AMOsetup'
+$end 'SolutionBlock4'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell2DDesign4'
+	VersionID=102
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=136
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='fractions=\'2\'', ID=107)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=107, Ver=102, Dir='DV107_V102.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=107, Ver=102, Dir='DV107_MI0_V102.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=2723, lin=101, lvl=0)
+		SolutionBlock3(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=1537, lin=56, lvl=0)
+		SolutionBlock4(pos=1818, lin=61, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3243, lin=124, lvl=0)
+	$end '$index$'
+$end '$index$'
